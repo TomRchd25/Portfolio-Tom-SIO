@@ -10,7 +10,7 @@ body {
     font-family:"Century Gothic", sans-serif;
 }
 
-.competences-container {
+.tp-container {
     max-width: 600px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -23,14 +23,14 @@ h1 {
     color: #333;
 }
 
-.competence {
+.tp {
     margin: 15px 0;
 }
 
-.competence h2 {
+.tp h2 {
     color: #e03d45;
 }
 
-.competence p {
+.tp p {
     color: #555;
 }
