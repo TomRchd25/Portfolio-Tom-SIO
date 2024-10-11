@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family:"Century Gothic", sans-serif;
-    background: linear-gradient(to right, #3d7eaa, #ffe47a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color:#3D7EAA;
 
 }
 
