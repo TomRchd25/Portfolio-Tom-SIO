@@ -6,30 +6,6 @@ font-family:"MS Gothic", sans-serif;
 background-color:#3D7EAA;
 }
 
-nav {
-    background-color: #11052b;
-    padding: 0.5em 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-}
-
-
-nav li {
-    display: inline;
-    margin-right: 30px;
-    font-size: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-}
 
 .ecran{
     width: 100%;
