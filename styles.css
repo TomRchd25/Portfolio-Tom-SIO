@@ -1,0 +1,50 @@
+/* styles.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.landing {
+    height: 100vh;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.document-card {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+}
+
+.doc-preview {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content {
+    background: rgba(255,255,255,0.95);
+}
+
+/* Add more custom styles as needed */
