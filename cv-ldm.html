@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Même header que index.html -->
+</head>
+<body>
+    <!-- Même navigation que index.html (changer .active sur le lien CV-LDM) -->
+    
+    <main class="container my-5">
+        <h2 class="text-center mb-5">CV & Lettre de Motivation</h2>
+        
+        <div class="document-container">
+            <!-- Carte CV -->
+            <div class="document-card">
+                <img src="assets/img/cv-preview.jpg" class="img-fluid" alt="Preview CV">
+                <div class="document-actions text-center">
+                    <button class="btn btn-primary btn-sm" onclick="zoomDocument('cv')">Agrandir</button>
+                    <a href="assets/docs/cv.pdf" download class="btn btn-success btn-sm">Télécharger</a>
+                </div>
+            </div>
 
+            <!-- Carte Lettre de Motivation -->
+            <div class="document-card">
+                <img src="assets/img/ldm-preview.jpg" class="img-fluid" alt="Preview LDM">
+                <div class="document-actions text-center">
+                    <button class="btn btn-primary btn-sm" onclick="zoomDocument('ldm')">Agrandir</button>
+                    <a href="assets/docs/ldm.pdf" download class="btn btn-success btn-sm">Télécharger</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal pour l'agrandissement -->
+        <div class="modal fade" id="documentModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img id="fullDocument" src="" class="img-fluid" alt="Document agrandi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Même footer que index.html -->
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
