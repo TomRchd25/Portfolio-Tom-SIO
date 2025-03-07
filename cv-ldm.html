@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Même header que index.html -->
+    <!-- Même entête que index.html -->
+    <title>CV-LDM - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Même navigation que index.html (changer .active sur le lien CV-LDM) -->
-    
+    <!-- Navigation (mettre 'active' sur CV-LDM) -->
+    <nav class="navbar...">
+        <!-- Copier la même navigation que index.html -->
+        <!-- Remplacer 'active' par : -->
+        <li class="nav-item"><a class="nav-link active" href="cv-ldm.html">CV-LDM</a></li>
+    </nav>
+
+    <!-- Contenu spécifique -->
     <main class="container my-5">
         <h2 class="text-center mb-5">CV & Lettre de Motivation</h2>
         
-        <div class="document-container">
+        <div class="row g-4">
             <!-- Carte CV -->
-            <div class="document-card">
-                <img src="assets/img/cv-preview.jpg" class="img-fluid" alt="Preview CV">
-                <div class="document-actions text-center">
-                    <button class="btn btn-primary btn-sm" onclick="zoomDocument('cv')">Agrandir</button>
-                    <a href="assets/docs/cv.pdf" download class="btn btn-success btn-sm">Télécharger</a>
+            <div class="col-md-6">
+                <div class="doc-card">
+                    <img src="assets/img/cv-preview.jpg" class="img-fluid">
+                    <div class="doc-actions text-center mt-3">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cvModal">Agrandir</button>
+                        <a href="assets/docs/cv.pdf" download class="btn btn-success">Télécharger</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Carte Lettre de Motivation -->
-            <div class="document-card">
-                <img src="assets/img/ldm-preview.jpg" class="img-fluid" alt="Preview LDM">
-                <div class="document-actions text-center">
-                    <button class="btn btn-primary btn-sm" onclick="zoomDocument('ldm')">Agrandir</button>
-                    <a href="assets/docs/ldm.pdf" download class="btn btn-success btn-sm">Télécharger</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal pour l'agrandissement -->
-        <div class="modal fade" id="documentModal">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img id="fullDocument" src="" class="img-fluid" alt="Document agrandi">
+            <!-- Carte LDM -->
+            <div class="col-md-6">
+                <div class="doc-card">
+                    <img src="assets/img/ldm-preview.jpg" class="img-fluid">
+                    <div class="doc-actions text-center mt-3">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ldmModal">Agrandir</button>
+                        <a href="assets/docs/ldm.pdf" download class="btn btn-success">Télécharger</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="cvModal">
+            <!-- Ajouter le contenu du modal pour le CV -->
+        </div>
+
+        <div class="modal fade" id="ldmModal">
+            <!-- Ajouter le contenu du modal pour la LDM -->
+        </div>
     </main>
 
-    <!-- Même footer que index.html -->
-
-    <script src="assets/js/scripts.js"></script>
+    <!-- Footer identique -->
 </body>
 </html>
