@@ -32,6 +32,7 @@ body::before {
   }
 }
 
+/* Couleur de la nav bar*/
 a {
   color: #99ffff;
 }
@@ -85,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 span {
   color: #ffc107;
+  /*Couleur Onglet Projet*/
   border-bottom: 2px solid #00CCCC;
   padding-bottom: 6px;
 }
